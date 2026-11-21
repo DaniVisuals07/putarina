@@ -42,7 +42,7 @@ export default async function handler(req, res) {
 
   sp.set('truck[type]', type);
   sp.set('truck[axleCount]', String(axles));
-  //sp.set('truck[trailerCount]', String(trailers));
+  sp.set('truck[trailerCount]', String(trailers));
   sp.set('truck[grossWeight]', String(weightKg));
   sp.set('truck[height]', String(Math.round(heightCm)));
   sp.set('truck[length]', String(Math.round(lengthCm)));
