@@ -40,7 +40,7 @@ export default async function handler(req, res) {
   sp.set('currency', currency);
   sp.set('lang', 'hr');
 
-  //sp.set('truck[type]', type);
+  sp.set('truck[type]', type);
   sp.set('truck[axleCount]', String(axles));
   //sp.set('truck[trailerCount]', String(trailers));
   sp.set('truck[grossWeight]', String(weightKg));
