@@ -47,7 +47,7 @@ export default async function handler(req, res) {
   sp.set('truck[height]', String(Math.round(heightCm)));
   sp.set('truck[length]', String(Math.round(lengthCm)));
   sp.set('truck[width]', '255');
-  sp.set('tolls[vehicleCategory]', 'Truck');
+  //sp.set('tolls[vehicleCategory]', 'Truck');
   sp.set('tolls[emissionType]', euro);
   if (['B', 'C', 'D', 'E'].includes(q.tunnel)) sp.set('truck[tunnelCategory]', q.tunnel);
   if (hazmat.length) sp.set('truck[shippedHazardousGoods]', hazmat.join(','));
